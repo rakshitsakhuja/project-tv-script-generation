@@ -14566,7 +14566,43 @@ Epoch:    5/5     Loss: 3.441303910255432
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> (Write answer, here)</p>
+<p><strong>Answer:</strong></p>
+<p>I started with 45 hidden layers, sequence length:5 300 embedding dimensions which gave below Loss Scores and as per my observation genrally n_layers used is from2-3 so i choose 2 for trial and didnt tried chaging them</p>
+<p>Training for 10 epoch(s)...</p>
+<p>Epoch:    1/10    Loss: 7.316414181709289</p>
+<p>Epoch:    1/10    Loss: 6.183839741706848</p>
+<p>Epoch:    1/10    Loss: 5.566499367713928</p>
+<p>Epoch:    1/10    Loss: 5.405178979873657</p>
+<p>Epoch:    1/10    Loss: 5.3185287847518925</p>
+<p>Epoch:    1/10    Loss: 5.316173090934753</p>
+<p>Epoch:    1/10    Loss: 5.2741123352050785</p>
+<p>Epoch:    1/10    Loss: 5.258421823501587</p>
+<p>Epoch:    2/10    Loss: 5.168034458060956</p>
+<p>Epoch:    2/10    Loss: 5.128421509742737</p>
+<p>Epoch:    2/10    Loss: 5.113167945861816</p>
+<p>Epoch:    2/10    Loss: 5.08350705909729</p>
+<p>Epoch:    2/10    Loss: 5.071897392272949</p>
+<p>Epoch:    2/10    Loss: 5.065134882926941</p>
+<p>Epoch:    2/10    Loss: 5.061484849929809</p>
+<p>Epoch:    2/10    Loss: 5.032804901123047</p>
+<p>Epoch:    3/10    Loss: 4.996505213231314</p>
+<p>Epoch:    3/10    Loss: 4.972280123710632</p>
+<p>Epoch:    3/10    Loss: 4.944638959884643</p>
+<p>Epoch:    3/10    Loss: 4.967986772537231</p>
+<p>Epoch:    3/10    Loss: 4.925793548583984</p>
+<p>Epoch:    3/10    Loss: 4.91780477809906</p>
+<p>Epoch:    3/10    Loss: 4.936987086296082</p>
+<p>Epoch:    3/10    Loss: 4.9356622858047485</p>
+<p>Epoch:    4/10    Loss: 4.90998134274925</p>
+<p>Epoch:    4/10    Loss: 4.877156304359436</p>
+<p>Epoch:    4/10    Loss: 4.860297797203064</p>
+<p>Epoch:    4/10    Loss: 4.874891211509705</p>
+<p>Epoch:    4/10    Loss: 4.859618836402893</p>
+<p>Epoch:    4/10    Loss: 4.871634662628174</p>
+<p>Epoch:    4/10    Loss: 4.877509223937988</p>
+<p>Epoch:    4/10    Loss: 4.85796034526825</p>
+<p>Since the loss decreased at high rates during strt of training,seemed to be right choice but later it was not decreasing at good rate so decided to stop the training and tune the parameters to more number of hidden dimensions(300) and sequence length(15) with increase in batch size to (500) , It seems that parameters used earler were good but model was training quite slow.Changing to new parameters gave good result in a way that it started loss value with 5.35 which showed that my parameters are better than earlier.
+But I was not able to acheive loss lesser than 3.5 so i retrained the model again for 5 epochs and got loss lesser than 3.5</p>
 
 </div>
 </div>
